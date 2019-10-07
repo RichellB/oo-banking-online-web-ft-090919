@@ -12,7 +12,7 @@ class BankAccount
     self.balance += money
   end
   
-  def self.display_balance
+  def display_balance
     self.balance
   end
     
