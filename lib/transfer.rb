@@ -29,7 +29,7 @@ class Transfer
   end
   
   def reverse_transfer
-    if valid?  amount && self.status == "complete"
+    if valid? && receiver.balance > amount && self.status == "complete"
       receiver.balance -= amount
       sender.balance += amount
       self.status = "reversed"
