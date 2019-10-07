@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def self.display_balance
-    @balance
+    self.balance
   end
     
 end
