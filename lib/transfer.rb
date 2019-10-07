@@ -8,4 +8,14 @@ class Transfer
     @receiver = receiver
     @amount = amount
   end
+  
+  ef execute_transaction
+    if valid? && sender.balance > amount && self.status == "pending"
+      sender.balance -= amount
+      receiver.balance += amount
+      self.status = "complete"
+    else
+      reject_transfer
+    end
+  end
 end
