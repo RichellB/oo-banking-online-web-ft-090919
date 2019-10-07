@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def display_balance
-    "Yyour balance is #{balance}"
+    "Yyour balance is $#{balance}."
   end
     
 end
