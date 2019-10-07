@@ -7,7 +7,11 @@ class BankAccount
     @status = status
   end
   
-  def deposit(money)
+  def self.deposit(money)
     @balance += money
   end
+  
+  def self.display_balance
+    
+    
 end
